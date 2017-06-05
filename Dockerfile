@@ -13,7 +13,8 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN apt-get update && \
     apt-get upgrade -y && \
-    openjdk-8-jre \
+    default-jdk \
+    default-jre \
     xvfb \
     chromium \
     protractor && \
