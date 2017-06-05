@@ -12,7 +12,7 @@ COPY . /app
 
 # Install any needed packages specified in requirements.txt
 RUN apt-get update -q && \
-    apt-get upgrade -y -q &&
+    apt-get upgrade -y -q && \
     apt-get curl -y -q
 
 # Include nodejs v6.x PPA
