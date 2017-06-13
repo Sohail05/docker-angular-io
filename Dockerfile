@@ -40,7 +40,7 @@ RUN npm install -g yarn @angular/cli karma-cli protractor
 RUN webdriver-manager update
 
 # Chrome error due to root setup
-RUN chown -R seluser:seluser /home/seluser/.pki
+RUN chown -R seluser:seluser /home/seluser
 
 USER seluser
 
