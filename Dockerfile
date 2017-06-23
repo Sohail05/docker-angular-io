@@ -1,7 +1,9 @@
 # Use the official ubuntu 16.04 runtime as a base image
 # FROM ubuntu:latest
 # Selenium, Firefox, chrome, vxfb and more available
-FROM elgalu/selenium:latest
+# FROM elgalu/selenium:latest
+# Permission issues with selenium image, tmp swap
+FROM markadams/chromium-xvfb-js:latest
 
 # Make use of -y -q in conjuction to avoid user interaction prompts
 ENV DEBIAN_FRONTEND noninteractive
