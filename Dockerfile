@@ -32,7 +32,7 @@ RUN apt-get install -y nodejs
 RUN npm install -g yarn @angular/cli
 
 # Update Selenium & Drivers
-RUN webdriver-manager update
+# RUN webdriver-manager update
 
 # Make port 80 available to the world outside this container
 #EXPOSE 80
