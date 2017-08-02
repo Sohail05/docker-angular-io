@@ -13,7 +13,7 @@ COPY . /app
 # Install any needed packages with apt-get
 RUN apt-get update -q && \
     apt-get upgrade -y -q && \
-    apt-get install -y -q curl xvfb firefox
+    apt-get install -y -q curl xvfb firefox git
 
 # Install Google Chrome
 RUN curl -o chrome.deb  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
